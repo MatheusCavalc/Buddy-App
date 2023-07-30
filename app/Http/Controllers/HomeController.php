@@ -9,10 +9,6 @@ class HomeController extends Controller
 {
     public function home()
     {
-        $buddies = Buddy::all();
-
-        return view('index', [
-            'buddies' => $buddies
-        ]);
+        return view('index');
     }
 }

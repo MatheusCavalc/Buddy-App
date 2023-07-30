@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'home']);
 Route::get('/create-buddy', [BuddyController::class, 'create']);
+Route::get('/edit-buddy/{id}', [BuddyController::class, 'edit']);
+

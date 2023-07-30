@@ -10,7 +10,7 @@
             </a>
 
             <p class="ml-20 text-xl font-bold text-white">
-                Create Buddy
+                Edit Buddy
             </p>
         </div>
 

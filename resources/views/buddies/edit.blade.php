@@ -4,6 +4,6 @@
 
 @section('content')
 
-    @livewire('index-buddy')
+<livewire:edit-buddy :buddy="$id" />
 
 @endsection
