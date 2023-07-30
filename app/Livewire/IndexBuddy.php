@@ -18,6 +18,13 @@ class IndexBuddy extends Component
         $this->userId = $id;
     }
 
+    public function deleteBuddy(Buddy $id)
+    {
+        $id->delete();
+
+        return $this->redirect('/');
+    }
+
     public function render()
     {
         return view('livewire.index-buddy', [
