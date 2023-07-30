@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BuddyController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'home']);
+Route::get('/create-buddy', [BuddyController::class, 'create']);

@@ -37,10 +37,10 @@
     </div>
 
     <div class="w-80 mx-auto mt-5 mb-4">
-        <div class="sticky bottom-0 text-center">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+        <div class="text-center">
+            <a href="/create-buddy" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                 Add Buddy
-            </button>
+            </a>
         </div>
     </div>
 
