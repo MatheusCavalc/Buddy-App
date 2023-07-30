@@ -22,7 +22,9 @@ class IndexBuddy extends Component
     {
         $id->delete();
 
-        return $this->redirect('/');
+        $this->editOrDelete = !$this->editOrDelete;
+
+        return $this->render();
     }
 
     public function render()
