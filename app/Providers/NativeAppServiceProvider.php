@@ -18,21 +18,31 @@ class NativeAppServiceProvider
     {
         Menu::new()
             ->appMenu()
-            ->submenu('About', Menu::new()
-                ->link('https://beyondco.de', 'Beyond Code')
-                ->link('https://simonhamp.me', 'Simon Hamp')
+            ->submenu(
+                'About',
+                Menu::new()
+                    ->link('https://beyondco.de', 'Beyond Code')
+                    ->link('https://simonhamp.me', 'Simon Hamp')
             )
-            ->submenu('View', Menu::new()
-                ->toggleFullscreen()
-                ->separator()
-                ->link('https://laravel.com', 'Learn More', 'CmdOrCtrl+L')
+            ->submenu(
+                'View',
+                Menu::new()
+                    ->toggleFullscreen()
+                    ->separator()
+                    ->link('https://laravel.com', 'Learn More', 'CmdOrCtrl+L')
             )
             ->register();
 
         Window::open()
+            ->titleBarHidden()
+            ->alwaysOnTop()
+            ->position(1050, 0)
             ->width(350)
-            ->height(400);
-
+            ->height(400)
+            ->minWidth(350)
+            ->minHeight(400)
+            ->maxWidth(350)
+            ->maxHeight(400);
         /**
             Dock::menu(
                 Menu::new()
@@ -53,6 +63,6 @@ class NativeAppServiceProvider
                 ->key('CmdOrCtrl+Shift+I')
                 ->event(ShortcutPressed::class)
                 ->register();
-        */
+         */
     }
 }

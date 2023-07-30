@@ -15,8 +15,7 @@
             @foreach ($buddies as $buddy)
                 <div class="flex items-center gap-4 p-4 border-b">
                     <div>
-                        <img class="w-12 h-12 rounded-full"
-                            src="{{ $buddy->image }}">
+                        <img class="w-12 h-12 rounded-full" src="{{ $buddy->image }}">
                     </div>
                     <div class="text-gray-400">
                         <p class="text-white text-sm font-medium dark:text-slate-200">{{ $buddy->name }}</p>
@@ -33,6 +32,15 @@
                     </div>
                 </div>
             @endforeach
+        </div>
+
+    </div>
+
+    <div class="w-80 mx-auto mt-5 mb-4">
+        <div class="sticky bottom-0 text-center">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                Add Buddy
+            </button>
         </div>
     </div>
 

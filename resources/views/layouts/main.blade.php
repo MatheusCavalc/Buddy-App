@@ -16,14 +16,6 @@
 
 <body class="bg-gray-800">
     @yield('content')
-
-    <div class="w-80 mx-auto mt-5 mb-4">
-        <div class="sticky bottom-0 text-center">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                Add Buddy
-            </button>
-        </div>
-    </div>
 </body>
 
 </html>
