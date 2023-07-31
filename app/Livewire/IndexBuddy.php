@@ -13,18 +13,14 @@ class IndexBuddy extends Component
 
     public function toEditOrDelete($id)
     {
-        $this->editOrDelete = !$this->editOrDelete;
+        if ($this->userId == $id) {
+            $this->editOrDelete = false;
+            $this->userId = '';
+            return;
+        }
 
+        $this->editOrDelete = true;
         $this->userId = $id;
-    }
-
-    public function deleteBuddy(Buddy $id)
-    {
-        $id->delete();
-
-        $this->editOrDelete = !$this->editOrDelete;
-
-        return $this->render();
     }
 
     public function render()

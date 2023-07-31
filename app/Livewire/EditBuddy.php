@@ -34,6 +34,13 @@ class EditBuddy extends Component
         return $this->redirect('/');
     }
 
+    public function delete()
+    {
+        Buddy::findOrFail($this->buddy->id)->delete();
+
+        return $this->redirect('/');
+    }
+
     public function render()
     {
         return view('livewire.edit-buddy');
